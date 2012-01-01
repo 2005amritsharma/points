@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>Points</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+ <div class="container">
+      <header>
+        <%= image_tag("logo.png", :alt => "My points", :class => "round") %>
+        <nav class="round">
+          <ul>
+            <li><%= link_to "Configuration", activities_path  %></li>
+            <li><%= link_to "Action", '#' %></li>
+          </ul>
+        </nav>
+     </header>
+     <section class="round">
+        <%= yield %>
+     </section>
+ </div>
 </body>
 </html>
