@@ -9,7 +9,10 @@
 <body>
  <div class="container">
       <header>
-        <%= image_tag("logo.png", :alt => "My points", :class => "round") %>
+        <span class='left'>
+          <%= image_tag("logo.png", :alt => "My points", :class => "round") %>
+        </span>
+        <span class='left'> <h1> My Points </h1> </span>
         <nav class="round">
           <ul>
             <li><%= link_to "Configuration", activities_path  %></li>
@@ -17,9 +20,10 @@
           </ul>
         </nav>
      </header>
-     <section class="round">
-        <%= yield %>
-     </section>
+     <br/> 
+       <section class="round">
+         <%= yield %>
+       </section>
  </div>
 </body>
 </html>
