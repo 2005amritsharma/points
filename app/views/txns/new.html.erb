@@ -1,0 +1,9 @@
+<h1> Add Action </h1>
+
+<%= form_for(@txn) do |f| %>
+  <%= render 'fields', :f => f %>
+  <div class="actions">
+    <%= f.submit "Add Action" %>
+  </div>
+<% end %>
+

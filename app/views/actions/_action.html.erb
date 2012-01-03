@@ -1,0 +1,12 @@
+<div class='action'> 
+  <span class='heading left'><%= action.activity.title %></span><span class='right'><%= action.points%></span>
+  <br/>
+  <br/>
+  <span class='description left'><%= action.comments %></span>
+  <br/>
+  <span class='right'>
+    <%= link_to 'Edit', edit_action_path(action) %>
+    <%= link_to 'Delete', action, :confirm => 'Are you sure?',:method => :delete %>
+  </span>
+  <br/>
+</div>

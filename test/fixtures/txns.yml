@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  txn_date: 2012-01-01 20:08:07
+  activity_id: 1
+  points: 1
+  comments: MyString
+
+two:
+  txn_date: 2012-01-01 20:08:07
+  activity_id: 1
+  points: 1
+  comments: MyString

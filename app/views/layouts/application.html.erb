@@ -3,6 +3,7 @@
 <head>
   <title>Points</title>
   <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
@@ -16,7 +17,7 @@
         <nav class="round">
           <ul>
             <li><%= link_to "Configuration", activities_path  %></li>
-            <li><%= link_to "Action", '#' %></li>
+            <li><%= link_to "Actions", txns_path  %></li>
           </ul>
         </nav>
      </header>

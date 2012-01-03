@@ -1,0 +1,6 @@
+<h1>Actions</h1>
+<% @txns.each do |txn| %>
+  <%= render txn %>
+<% end %>
+<br/>
+<%= link_to 'New Action', new_txn_path %>

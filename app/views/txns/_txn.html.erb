@@ -1,0 +1,12 @@
+<div class='txn'> 
+  <span class='heading left'><%= txn.activity.title %></span><span class='right'><%= txn.points %></span>
+  <br/>
+  <br/>
+  <span class='description left'><%= txn.comments %></span>
+  <br/>
+  <span class='right'>
+    <%= link_to 'Edit', edit_txn_path(txn) %>
+    <%= link_to 'Delete', txn, :confirm => 'Are you sure?',:method => :delete %>
+  </span>
+  <br/>
+</div>

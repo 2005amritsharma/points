@@ -1,0 +1,23 @@
+<script type='text/javascript'>
+  $(function (){
+    $('#txn_txn_date').datepicker();
+   });
+</script>
+
+  <div class="field">
+    <%= f.label :txn_date %><br />
+    <%= f.text_field :txn_date %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_id %><br />
+    <%= collection_select(:txn, :activity_id, Activity.all, :id, :title) %>
+  </div>
+  <div class="field">
+    <%= f.label :points %><br />
+    <%= f.text_field :points, :size => 10 %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+
