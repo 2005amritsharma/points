@@ -6,6 +6,8 @@ class TxnsController < ApplicationController
 
  def new
   @txn = Txn.new
+  @activities = Activity.all
+  @txns = Txn.all
  end
 
  def create

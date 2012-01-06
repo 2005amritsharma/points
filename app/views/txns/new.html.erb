@@ -1,9 +1,23 @@
 <h1> Add Action </h1>
-
-<%= form_for(@txn) do |f| %>
-  <%= render 'fields', :f => f %>
-  <div class="actions">
-    <%= f.submit "Add Action" %>
-  </div>
-<% end %>
-
+<br/>
+<h3><%= Date.today.to_s(:long) %></h3>
+ 
+<div id="activities" class="left">
+<h3>Available Activities</h3>
+ <% @activities.each do |activity|  %>
+    <div>
+      <span><%= activity.title %> </span>
+      <span><a href='#'>Add</a></span>
+    </div>
+ <% end %>
+</div>
+<div id="txns" class="right">
+<h3>Actions Completed</h3>
+ <% @txns.each do |txn|  %>
+    <div>
+      <span><%= txn.activity.title %> </span>
+      <span><%= txn.points %> </span>
+      <span><a href='#'>Remove</a></span>
+    </div>
+ <% end %>
+</div>
