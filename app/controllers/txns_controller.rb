@@ -5,9 +5,8 @@ class TxnsController < ApplicationController
  end
 
  def new
-  @txn = Txn.new
   @activities = Activity.all
-  @txns = Txn.all
+  @total_score = Txn.total_points Date.today
  end
 
  def create

@@ -1,23 +1,164 @@
-<h1> Add Action </h1>
-<br/>
-<h3><%= Date.today.to_s(:long) %></h3>
- 
-<div id="activities" class="left">
-<h3>Available Activities</h3>
- <% @activities.each do |activity|  %>
-    <div>
-      <span><%= activity.title %> </span>
-      <span><a href='#'>Add</a></span>
+<script type="text/javascript">
+
+    var activities = null;
+    var selected_activity_index = 0;
+
+    $(function() {
+        activities = <%= @activities.to_json.html_safe %>;
+        selected_activity_index = parseInt(activities.length/2);
+        renderSelector();
+    });
+
+    function activitiesUp() {
+        var obj = activities.shift();
+        activities.push(obj);
+        renderSelector();
+    }
+
+
+    function activitiesDown() {
+        var obj = activities.pop();
+        activities.unshift(obj);
+        renderSelector();
+    }
+
+
+    function activityAdd() {
+        var dailyScore = parseInt($('#dailyScore').text());
+        var changePoints = parseInt($('#changePoints').text());
+        if ($('#activityType').text() == "+") {
+            dailyScore = dailyScore + changePoints;
+        }
+        else {
+            dailyScore = dailyScore - changePoints;
+        }
+        $('#dailyScore').text(dailyScore);
+        // call ajax to persist
+    }
+
+
+    function renderSelector() {
+
+        resetSelector();
+        setSelected();
+        setRemaining();
+    }
+
+    function resetSelector() {
+        $('#itemSelected').text('');
+        $('#itemPrev1').text('');
+        $('#itemPrev2').text('');
+        $('#itemPrev3').text('');
+        $('#itemPrev4').text('');
+        $('#itemPrev5').text('');
+        $('#itemPrev6').text('');
+        $('#itemNext1').text('');
+        $('#itemNext2').text('');
+        $('#itemNext3').text('');
+        $('#itemNext4').text('');
+        $('#itemNext5').text('');
+        $('#itemNext6').text('');
+    }
+
+    function setSelected() {
+
+        // first take care of selected activity
+        $('#itemSelected').text(activities[selected_activity_index].activity.title);
+        $('#changePoints').text(activities[selected_activity_index].activity.points);
+
+        if (activities[selected_activity_index].activity.activity_type == 1) {
+            $('#activityType').text("+");
+            $('#activityType').removeClass("NegativeSign");
+            $('#activityType').addClass("PositiveSign");
+            $('#GOButton').removeClass("GONegative");
+            $('#GOButton').addClass("GOPositive");
+        }
+        else {
+            $('#activityType').text("-");
+            $('#activityType').removeClass("PositiveSign");
+            $('#activityType').addClass("NegativeSign");
+            $('#GOButton').removeClass("GOPositive");
+            $('#GOButton').addClass("GONegative");
+        }
+    }
+
+    function setRemaining() {
+
+        // set all prior to index
+        for (var i = 1; i <= 6; i++) {
+            index = selected_activity_index - i;
+            if (index >= 0) {
+                $('#itemPrev' + i).text(activities[index].activity.title);
+            }
+        }
+
+        // set all after the index
+        for (var i = 1; i <= 6; i++) {
+            index = selected_activity_index + i;
+            if (index < activities.length) {
+                $('#itemNext' + i).text(activities[index].activity.title);
+            }
+        }
+
+    }
+
+
+</script>
+
+<div>
+  <div class='TopSection'>
+    &nbsp; <br/>
+    <span class="DateHeading"><%= Date.today.strftime('%A, %B %-d, %Y') %></span>
+    <br/> &nbsp;
+  </div>
+
+  <div class='MidSection'>
+    <div class='leftColumn'>
+
+      <div class='leftColumnTop'><span id='itemPrev6' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemPrev5' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemPrev4' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemPrev3' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemPrev2' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemPrev1' class='Shade'></span></div>
+      <div class='leftColumnSelected'><span id='itemSelected' class='Spotlight'></span></div>
+      <div class='leftColumnTop'><span id='itemNext1' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemNext2' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemNext3' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemNext4' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemNext5' class='Shade'></span></div>
+      <div class='leftColumnTop'><span id='itemNext6' class='Shade'></span></div>
+
     </div>
- <% end %>
-</div>
-<div id="txns" class="right">
-<h3>Actions Completed</h3>
- <% @txns.each do |txn|  %>
-    <div>
-      <span><%= txn.activity.title %> </span>
-      <span><%= txn.points %> </span>
-      <span><a href='#'>Remove</a></span>
+    <div class='middleColumn'>
+      <div class='middleColumnTop'></div>
+      <div class='middleColumnMiddle'></div>
+      <div class='middleColumnBottom'>
+        <div>
+          <div>
+                <div onclick="activitiesUp();" class='arrow-up'></div>
+          </div>
+          <div> &nbsp;</div>
+          <div>
+                <div onclick="activitiesDown();" class='arrow-down'></div>
+          </div>
+        </div>
+      </div>
     </div>
- <% end %>
+    <div class='rightColumn'>
+      <div class='rightColumnTop'><br/><span id='dailyScore' class='CurrentScore'><%= @total_score %></span></div>
+      <div class='rightColumnMiddle'>
+    	 <span class='PointChange'>
+   	    	 <span id="activityType" class="NegativeSign">-</span><span id='changePoints'>20</span>
+         </span>
+      </div>
+      <div class='rightColumnBottom'><span id="GOButton" onclick="activityAdd();" class='GONegative'>GO</span></div>
+    </div>
+  </div>
+  <div class='BottomSection'>
+    &nbsp; <br/>
+    <span class='BottomLink'>Today</span> <span class='BottomLink'>History</span>
+    <span class='BottomLink'>Configure</span>
+    <br/> &nbsp;
+  </div>
 </div>

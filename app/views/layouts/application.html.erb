@@ -7,13 +7,9 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body background="/images/gradient.png">
  <div class="container">
       <header>
-        <span class='left'>
-          <%= image_tag("logo.png", :alt => "My points", :class => "round") %>
-        </span>
-        <span class='left'> <h1> My Points </h1> </span>
         <nav class="round">
           <ul>
             <li><%= link_to "Configuration", activities_path  %></li>

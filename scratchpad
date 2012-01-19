@@ -1,0 +1,7 @@
+[
+ {"activity":{"activity_type":1,"created_at":"2012-01-01T01:09:09Z","description":"Read at least 20 pages of a book/magazine/comic","id":2,"points":20,"title":"Reading","updated_at":"2012-01-01T01:09:09Z"}},
+ {"activity":{"activity_type":2,"created_at":"2012-01-01T03:20:35Z","description":"Youtube on ipod, TV etc","id":6,"points":10,"title":"Watching Media","updated_at":"2012-01-01T03:21:21Z"}},
+ {"activity":{"activity_type":1,"created_at":"2012-01-01T03:00:36Z","description":"Write at least one page. It can be a summary of a book/chapter/comic/day's events","id":3,"points":20,"title":"Writing","updated_at":"2012-01-01T03:00:36Z"}}
+]
+
+<div class='scrollBox'><span class='arrow'><div onclick="activitiesUp();" class='arrow-up'></div></span></div>

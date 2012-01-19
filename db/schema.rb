@@ -11,16 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120102040807) do
-
-  create_table "actions", :force => true do |t|
-    t.datetime "action_date"
-    t.integer  "activity_id"
-    t.integer  "points"
-    t.string   "comments"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20120106041018) do
 
   create_table "activities", :force => true do |t|
     t.string   "title"
