@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca6562c-1cf9-402d-8d6a-2449ba0c6939" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/action.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/actions/_action.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/actions/_fields.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/actions/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/actions/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/actions/new.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/points.iml" afterPath="$PROJECT_DIR$/.idea/points.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/txns_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/txn.rb" afterPath="$PROJECT_DIR$/app/models/txn.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/new.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/new.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scratchpad" afterPath="$PROJECT_DIR$/scratchpad" />
     </list>
     <ignored path="points.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="22" selection-start="4633" selection-end="4633" vertical-scroll-proportion="-39.125">
+            <state line="136" column="139" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.74120605">
               <folding />
             </state>
           </provider>
@@ -67,10 +56,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="289" column="14" selection-start="4606" selection-end="4606" vertical-scroll-proportion="0.6921182">
+            <state line="261" column="48" selection-start="4137" selection-end="4137" vertical-scroll-proportion="-21.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/activities/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="68" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +86,7 @@
       <file leaf-file-name="scratchpad" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scratchpad">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="110" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
+            <state line="32" column="1" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,14 +107,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/db/migrate/20120106041018_drop_actions.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/activities/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/txn.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/activities/new.html.erb" />
         <option value="$PROJECT_DIR$/scratchpad" />
-        <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
       </list>
     </option>
   </component>
@@ -713,27 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="330" selection-end="330" vertical-scroll-proportion="0.113065325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratchpad">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="110" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="2" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
@@ -741,16 +727,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/activities/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="22" selection-start="4633" selection-end="4633" vertical-scroll-proportion="-39.125">
+        <state line="0" column="68" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratchpad">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="1" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="289" column="14" selection-start="4606" selection-end="4606" vertical-scroll-proportion="0.6921182">
+        <state line="261" column="48" selection-start="4137" selection-end="4137" vertical-scroll-proportion="-21.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="139" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.74120605">
           <folding />
         </state>
       </provider>
