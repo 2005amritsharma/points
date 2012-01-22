@@ -16,4 +16,14 @@ class Txn < ActiveRecord::Base
     positive_count - negative_count
   end
 
+    def self.cumulative_points
+
+    positive_count = Txn.sum(:points,
+                             :joins=> " INNER JOIN activities ON activities.id = txns.activity_id AND activities.activity_type = 1")
+
+    negative_count = Txn.sum(:points,
+                             :joins=> " INNER JOIN activities ON activities.id = txns.activity_id AND activities.activity_type = 2")
+
+    positive_count - negative_count
+  end
 end

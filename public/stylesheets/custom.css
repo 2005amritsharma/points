@@ -104,10 +104,31 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.logoText {
+    color: white;
+    font-size: 400%;
+    text-align: left;
+    float: left;
+}
+
+.logoImage {
+    margin-left: -8px;
+    margin-right: -8px;
+    width: 64px;
+    height: 64px;
+}
+
+.userImage {
+    margin: 10px;
+    float: right;
+    width: 192px;
+    height: 128px;
+}
+
 .DateHeading {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: #CCC;
-    font-size: 36px;
+    font-size: 300%;
 }
 
 .BottomLink {
@@ -143,18 +164,18 @@ nav ul li a:hover {
     right: 0;
 }
 
-.NegativeSign {
-    color: #F30;
-}
 
-.PositiveSign {
-    color: #6C3;
+.cumulative {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: white;
+    font-size: 800%;
+    text-align: center;
 }
 
 .CurrentScore {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: #CCC;
-    font-size: 800%;
+    color: #6C3;
+    font-size: 400%;
     padding: 10px;
 }
 
@@ -165,49 +186,18 @@ nav ul li a:hover {
     padding: 10px;
 }
 
-.GOPositive {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: #3C0;
-    font-size: 200%;
-    text-shadow: 1px 1px #3C0, -1px -1px #333;
-    letter-spacing: 3px;
-    width: 500px;
-    height: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #333;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; /* future proofing */
-    cursor: pointer;
+.NegativeSign {
+    color: #F30;
 }
 
-.GONegative {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: #F30;
-    font-size: 200%;
-    text-shadow: 1px 1px #F00, -1px -1px #333;
-    letter-spacing: 3px;
-    width: 500px;
-    height: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #333;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; /* future proofing */
-    cursor: pointer;
+.PositiveSign {
+    color: #6C3;
 }
 
 .Shade {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: 250%;
+    font-size: 200%;
     color: #999999;
-    padding-right: 60px;
     width: 400px;
     cursor: pointer;
     transition: all 0.2s linear;
@@ -222,7 +212,7 @@ nav ul li a:hover {
 
 div.leftColumn {
     float: left;
-    width: 48%;
+    width: 50%;
     margin-top: 0;
     padding: 0;
     text-align: right;
@@ -230,14 +220,14 @@ div.leftColumn {
 
 div.middleColumn {
     float: left;
-    width: 6%;
+    width: 5%;
     margin-top: 0;
     padding: 0;
 }
 
 div.rightColumn {
-    float: right;
-    width: 42%;
+    float: left;
+    width: 45%;
     margin-top: 0;
     padding: 0;
     text-align: left;
@@ -256,7 +246,7 @@ div.leftColumnSelected {
 }
 
 div.middleColumnTop {
-    height: 320px;
+    height: 280px;
     margin-top: 0;
     padding: 0;
 }
@@ -267,12 +257,12 @@ div.middleColumnMiddle {
 }
 
 div.middleColumnBottom {
-    height: 360px;
+    height: 400px;
     margin-top: 0;
 }
 
 div.rightColumnTop {
-    height: 420px;
+    height: 430px;
     margin-top: 0;
     padding: 0;
 }
@@ -283,7 +273,7 @@ div.rightColumnMiddle {
 }
 
 div.rightColumnBottom {
-    height: 260px;
+    height: 250px;
     margin-top: 0;
 }
 
@@ -291,14 +281,3 @@ div.rightColumnBottom {
     cursor: pointer;
 }
 
-.logoText {
-    color: white;
-    font-size: 300%;
-    text-align: left;
-    float: left;
-}
-
-.userImage {
-    padding: 5px;
-    float: right;
-}

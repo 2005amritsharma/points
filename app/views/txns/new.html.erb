@@ -53,19 +53,9 @@
         var activity_id = $('#itemSelected').attr('activityID');
         var dailyScore = parseInt($('#dailyScore').text());
         var changePoints = parseInt($('#changePoints').text());
-
-        /*
-        if ($('#activityType').text() == "+") {
-            dailyScore = dailyScore + changePoints;
-        }
-        else {
-            dailyScore = dailyScore - changePoints;
-        }
-        $('#dailyScore').text(dailyScore);
-        */
-
+        var txn_date = $("#txnDate").val();
         // call ajax to persist
-        $.post("/txns", { txn : {txn_date: '1/21/2012', activity_id: activity_id, points: changePoints, comments: 'xyz' } });
+        $.post("/txns", { txn : {txn_date: txn_date, activity_id: activity_id, points: changePoints, comments: '' } });
     }
 
 
@@ -103,15 +93,15 @@
             $('#activityType').text("+");
             $('#activityType').removeClass("NegativeSign");
             $('#activityType').addClass("PositiveSign");
-            $('#GOButton').removeClass("GONegative");
-            $('#GOButton').addClass("GOPositive");
+            // $('#GOButton').removeClass("GONegative");
+            // $('#GOButton').addClass("GOPositive");
         }
         else {
             $('#activityType').text("-");
             $('#activityType').removeClass("PositiveSign");
             $('#activityType').addClass("NegativeSign");
-            $('#GOButton').removeClass("GOPositive");
-            $('#GOButton').addClass("GONegative");
+            // $('#GOButton').removeClass("GOPositive");
+            // $('#GOButton').addClass("GONegative");
         }
     }
 
@@ -139,16 +129,18 @@
 
 
 </script>
-
+<input type='hidden' id='txnDate' value="<%= Date.today.strftime('%m/%d/%Y') %>"/>
 <div>
   <div class='TopSection'>
-    <span><span class="logoText">&nbsp;</span><span class="logoText">myP</span><span class="logoText"><img src="/images/logo.png" width="48" height="56"/></span><span class="logoText">INTS</span></span>
-    <span class="DateHeading"><%= Date.today.strftime('%A, %B %-d, %Y') %></span>
-    <span class="userImage"><img src="/images/amrits.JPG" width="96" height="64"/></span>
+    <span><span class="logoText">&nbsp;</span><span class="logoText">myP</span><span class="logoText"><img class='logoImage' src="/images/logo.png"/></span><span class="logoText">INTS</span></span>
+    <span id="cumulativePoints" class="cumulative"><%= @cumulative_points %></span>
+    <img class='userImage' src="/images/amrits.JPG"/>
     <br/> &nbsp;
   </div>
 
   <div class='MidSection'>
+    <div class='MidSectionTopBar'><span class="DateHeading"><%= Date.today.strftime('%A, %B %-d, %Y') %>
+      :&nbsp;</span><span id='dailyScore' class='CurrentScore'><%= @total_score %></span></div>
     <div class='leftColumn'>
 
       <div class='leftColumnTop'><span id='itemPrev6' class='Shade' style="padding-right: 400px;"></span></div>
@@ -184,13 +176,14 @@
       </div>
     </div>
     <div class='rightColumn'>
-      <div class='rightColumnTop'><br/><span id='dailyScore' class='CurrentScore'><%= @total_score %></span></div>
+      <div class='rightColumnTop'><br/></div>
       <div class='rightColumnMiddle'>
     	 <span class='PointChange'>
    	    	 <span id="activityType" class="NegativeSign">-</span><span id='changePoints'>20</span>
          </span>
       </div>
-      <div class='rightColumnBottom'><span id="GOButton" onclick="activityAdd();" class='GONegative'>GO</span></div>
+      <div class='rightColumnBottom'>
+        <img class="clickable" src="/images/go.gif" onclick="activityAdd();" width="120" height="120"></div>
     </div>
   </div>
   <div class='BottomSection'>

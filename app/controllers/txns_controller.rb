@@ -6,14 +6,18 @@ class TxnsController < ApplicationController
 
   def new
     @activities = Activity.all
+
     @total_score = Txn.total_points Date.today
+    @cumulative_points = Txn.cumulative_points
   end
 
   def create
     @txn = Txn.new(params[:txn])
-    @txn.txn_date = Date.today
+    @txn.txn_date = DateTime.strptime(params[:txn][:txn_date], '%m/%d/%Y')
     @txn.save
+
     @total_score = Txn.total_points Date.today
+    @cumulative_points = Txn.cumulative_points
     respond_to do |format|
       format.js
     end
