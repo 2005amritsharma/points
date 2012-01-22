@@ -49,8 +49,12 @@
     }
 
     function activityAdd() {
+
+        var activity_id = $('#itemSelected').attr('activityID');
         var dailyScore = parseInt($('#dailyScore').text());
         var changePoints = parseInt($('#changePoints').text());
+
+        /*
         if ($('#activityType').text() == "+") {
             dailyScore = dailyScore + changePoints;
         }
@@ -58,7 +62,10 @@
             dailyScore = dailyScore - changePoints;
         }
         $('#dailyScore').text(dailyScore);
+        */
+
         // call ajax to persist
+        $.post("/txns", { txn : {txn_date: '1/21/2012', activity_id: activity_id, points: changePoints, comments: 'xyz' } });
     }
 
 
@@ -89,6 +96,7 @@
 
         // first take care of selected activity
         $('#itemSelected').text(activities[selected_activity_index].activity.title);
+        $('#itemSelected').attr('activityID', activities[selected_activity_index].activity.id);
         $('#changePoints').text(activities[selected_activity_index].activity.points);
 
         if (activities[selected_activity_index].activity.activity_type == 1) {
@@ -134,8 +142,9 @@
 
 <div>
   <div class='TopSection'>
-    <span><span class="logoText">&nbsp;</span><span class="logoText">myP</span><span class="logoText"><img src="/images/logo.png" width="48" height="56" /></span><span class="logoText">INTS</span></span>
+    <span><span class="logoText">&nbsp;</span><span class="logoText">myP</span><span class="logoText"><img src="/images/logo.png" width="48" height="56"/></span><span class="logoText">INTS</span></span>
     <span class="DateHeading"><%= Date.today.strftime('%A, %B %-d, %Y') %></span>
+    <span class="userImage"><img src="/images/amrits.JPG" width="96" height="64"/></span>
     <br/> &nbsp;
   </div>
 

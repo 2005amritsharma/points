@@ -297,3 +297,8 @@ div.rightColumnBottom {
     text-align: left;
     float: left;
 }
+
+.userImage {
+    padding: 5px;
+    float: right;
+}
