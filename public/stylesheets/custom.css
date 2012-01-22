@@ -104,6 +104,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .logoText {
     color: white;
     font-size: 400%;
@@ -198,17 +202,24 @@ nav ul li a:hover {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 200%;
     color: #999999;
-    width: 400px;
     cursor: pointer;
-    transition: all 0.2s linear;
+    padding: 80px;
 }
 
 .Spotlight {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 300%;
     color: #FFF;
-    padding-right: 40px;
+    padding: 50px;
 }
+
+div.MidSectionTopBar {
+   padding-bottom: 50px;
+}
+
+/*
+  Three columns
+*/
 
 div.leftColumn {
     float: left;
@@ -233,51 +244,51 @@ div.rightColumn {
     text-align: left;
 }
 
+/*
+  Rows within the three columns
+*/
+
 div.leftColumnTop {
-    height: 70px;
     margin-top: 0;
-    padding: 0;
+    padding: 8px;
 }
 
 div.leftColumnSelected {
-    height: 70px;
     margin-top: 0;
-    padding: 0;
+    padding: 10px;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
 }
 
 div.middleColumnTop {
-    height: 280px;
-    margin-top: 0;
-    padding: 0;
+    margin-top: 120px;
 }
 
 div.middleColumnMiddle {
-    height: 70px;
-    margin-top: 0;
+    margin-top: 90px;
+    padding: 37px;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
 }
 
 div.middleColumnBottom {
-    height: 400px;
-    margin-top: 0;
+    margin-top: 120px;
 }
 
 div.rightColumnTop {
-    height: 430px;
-    margin-top: 0;
-    padding: 0;
+    margin-top: 120px;
+    padding: 8px;
 }
 
 div.rightColumnMiddle {
-    height: 70px;
-    margin-top: 0;
+    margin-top: 157px;
+    padding: 10px;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
 }
 
 div.rightColumnBottom {
-    height: 250px;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
-.clickable {
-    cursor: pointer;
-}
 

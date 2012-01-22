@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca6562c-1cf9-402d-8d6a-2449ba0c6939" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/txns_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/txn.rb" afterPath="$PROJECT_DIR$/app/models/txn.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/create.js" afterPath="$PROJECT_DIR$/app/views/txns/create.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/new.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
     </list>
@@ -33,7 +29,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="53" selection-start="4584" selection-end="4584" vertical-scroll-proportion="-10.375">
+            <state line="165" column="0" selection-start="6196" selection-end="6196" vertical-scroll-proportion="-32.25">
               <folding />
             </state>
           </provider>
@@ -78,7 +74,7 @@
       <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="13" selection-start="3065" selection-end="3065" vertical-scroll-proportion="0.10098522">
+            <state line="290" column="20" selection-start="4084" selection-end="4084" vertical-scroll-proportion="0.9014778">
               <folding />
             </state>
           </provider>
@@ -783,14 +779,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="53" selection-start="4584" selection-end="4584" vertical-scroll-proportion="-10.375">
+        <state line="165" column="0" selection-start="6196" selection-end="6196" vertical-scroll-proportion="-32.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="13" selection-start="3065" selection-end="3065" vertical-scroll-proportion="0.10098522">
+        <state line="290" column="20" selection-start="4084" selection-end="4084" vertical-scroll-proportion="0.9014778">
           <folding />
         </state>
       </provider>
