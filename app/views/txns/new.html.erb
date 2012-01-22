@@ -130,60 +130,55 @@
 
 </script>
 <input type='hidden' id='txnDate' value="<%= Date.today.strftime('%m/%d/%Y') %>"/>
-<div>
-  <div class='TopSection'>
-    <span><span class="logoText">&nbsp;</span><span class="logoText">myP</span><span class="logoText"><img class='logoImage' src="/images/logo.png"/></span><span class="logoText">INTS</span></span>
-    <span id="cumulativePoints" class="cumulative"><%= @cumulative_points %></span>
-    <img class='userImage' src="/images/amrits.JPG"/>
-    <br/> &nbsp;
-  </div>
 
-  <div class='MidSection'>
-    <div class='MidSectionTopBar'><span class="DateHeading"><%= Date.today.strftime('%A, %B %-d, %Y') %>
-      :&nbsp;</span><span id='dailyScore' class='CurrentScore'><%= @total_score %></span></div>
-    <div class='leftColumn'>
+<div class='row1'>
+  <div class="row1left">myP<img class='logoImage' src="/images/logo.png"/>INTS</div>
+  <div class="row1middle" id="cumulativePoints"><%= @cumulative_points %></div>
+  <div class="row1right"><img class='userImage' src="/images/amrits.JPG"/></div>
+</div>
 
-      <div class='leftColumnTop'><span id='itemPrev6' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemPrev5' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemPrev4' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemPrev3' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemPrev2' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemPrev1' class='Shade'></span></div>
-      <div class='leftColumnSelected'><span id='itemSelected' class='Spotlight'></span></div>
-      <div class='leftColumnTop'><span id='itemNext1' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemNext2' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemNext3' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemNext4' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemNext5' class='Shade'></span></div>
-      <div class='leftColumnTop'><span id='itemNext6' class='Shade'></span></div>
+<div class='row2'>
+  <div class="row2left"><%= Date.today.strftime('%A, %B %-d, %Y') %>:</div>
+  <div class='row2right' id='dailyScore'><%= @total_score %></div>
+</div>
 
+<div class='row3'>
+    <div class='row3left'>
+      <div id='itemPrev6'></div>
+      <div id='itemPrev5'></div>
+      <div id='itemPrev4'></div>
+      <div id='itemPrev3'></div>
+      <div id='itemPrev2'></div>
+      <div id='itemPrev1'></div>
     </div>
-    <div class='middleColumn'>
-      <div class='middleColumnTop'>
-          <img class="clickable" onclick="activitiesUp();" width="96" height="96" src='/images/button-up.gif'></img>
-      </div>
-      <div class='middleColumnMiddle'>
+    <div class='row3right'>
+      <img class="clickable" onclick="activitiesUp();" width="64" height="64" src='/images/button-up.gif'/>
+    </div>
+</div>
 
-      </div>
-      <div class='middleColumnBottom'>
-            <img class="clickable" onclick="activitiesDown();" width="96" height="96" src='/images/button-down.gif'></img>
-      </div>
-    </div>
-    <div class='rightColumn'>
-      <div class='rightColumnTop'><br/></div>
-      <div class='rightColumnMiddle'>
-    	 <span class='PointChange'>
-   	    	 <span id="activityType" class="NegativeSign">-</span><span id='changePoints'>20</span>
-         </span>
-      </div>
-      <div class='rightColumnBottom'>
-        <img class="clickable" src="/images/go.gif" onclick="activityAdd();" width="120" height="120"></div>
-    </div>
+<div class='row4'>
+  <div class="row4left">
+    <div id="itemSelected"></div>
   </div>
-  <div class='BottomSection'>
-    &nbsp; <br/>
-    <span class='BottomLink'>Today</span> <span class='BottomLink'>History</span>
-    <span class='BottomLink'>Configure</span>
-    <br/> &nbsp;
+  <div class='row4middle'>
+  	 <span id="activityType" class="NegativeSign">-</span>
+     <span id='changePoints'>20</span>
   </div>
+  <div class='row4right'>
+    <img align="left" class="clickable" src="/images/go.gif" onclick="activityAdd();" width="64" height="64"/>
+  </div>
+</div>
+
+<div class='row5'>
+    <div class='row5left'>
+      <div id='itemNext1'></div>
+      <div id='itemNext2'></div>
+      <div id='itemNext3'></div>
+      <div id='itemNext4'></div>
+      <div id='itemNext5'></div>
+      <div id='itemNext6'></div>
+    </div>
+    <div class='row5right'>
+      <img class="clickable" onclick="activitiesDown();" width="64" height="64" src='/images/button-down.gif'/>
+    </div>
 </div>
