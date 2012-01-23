@@ -10,7 +10,7 @@
     });
 
     $(function() {
-        $(".Shade").live("click", function() {
+        $(".selection").live("click", function() {
             clickedID = $(this).attr('activityID');
             currentPositionType = $(this).attr('id').substring(4, 8);
             currentPositionIndex = $(this).attr('id').substring(8);
@@ -144,15 +144,15 @@
 
 <div class='row3'>
     <div class='row3left'>
-      <div id='itemPrev6'></div>
-      <div id='itemPrev5'></div>
-      <div id='itemPrev4'></div>
-      <div id='itemPrev3'></div>
-      <div id='itemPrev2'></div>
-      <div id='itemPrev1'></div>
+      <div id='itemPrev6' class="clickable selection"></div>
+      <div id='itemPrev5' class="clickable selection"></div>
+      <div id='itemPrev4' class="clickable selection"></div>
+      <div id='itemPrev3' class="clickable selection"></div>
+      <div id='itemPrev2' class="clickable selection"></div>
+      <div id='itemPrev1' class="clickable selection"></div>
     </div>
     <div class='row3right'>
-      <img class="clickable" onclick="activitiesUp();" width="64" height="64" src='/images/button-up.gif'/>
+      <img class="clickable" onclick="activitiesUp();" width="48" height="48" src='/images/button-up.gif'/>
     </div>
 </div>
 
@@ -171,14 +171,14 @@
 
 <div class='row5'>
     <div class='row5left'>
-      <div id='itemNext1'></div>
-      <div id='itemNext2'></div>
-      <div id='itemNext3'></div>
-      <div id='itemNext4'></div>
-      <div id='itemNext5'></div>
-      <div id='itemNext6'></div>
+      <div id='itemNext1' class="clickable selection"></div>
+      <div id='itemNext2' class="clickable selection"></div>
+      <div id='itemNext3' class="clickable selection"></div>
+      <div id='itemNext4' class="clickable selection"></div>
+      <div id='itemNext5' class="clickable selection"></div>
+      <div id='itemNext6' class="clickable selection"></div>
     </div>
     <div class='row5right'>
-      <img class="clickable" onclick="activitiesDown();" width="64" height="64" src='/images/button-down.gif'/>
+      <img class="clickable" onclick="activitiesDown();" width="48" height="48" src='/images/button-down.gif'/>
     </div>
 </div>

@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="20" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.7236181">
+            <state line="176" column="53" selection-start="5898" selection-end="5898" vertical-scroll-proportion="-41.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="393" column="16" selection-start="5508" selection-end="5508" vertical-scroll-proportion="0.0">
+            <state line="262" column="13" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.92610836">
               <folding />
             </state>
           </provider>
@@ -111,8 +111,8 @@
         <option value="$PROJECT_DIR$/app/models/txn.rb" />
         <option value="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/txns/create.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
       </list>
     </option>
   </component>
@@ -759,16 +759,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
+    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="16" selection-start="5508" selection-end="5508" vertical-scroll-proportion="0.0">
+        <state line="176" column="53" selection-start="5898" selection-end="5898" vertical-scroll-proportion="-41.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="20" selection-start="5435" selection-end="5435" vertical-scroll-proportion="0.7236181">
+        <state line="262" column="13" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.92610836">
           <folding />
         </state>
       </provider>
