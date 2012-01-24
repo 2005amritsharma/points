@@ -1,6 +1,10 @@
 <div class="txn">
   <div class="titleTxn"><%= txn.activity.title %></div>
-  <div class="pointsTxn"><%= txn.points %></div>
+  <div class="pointsTxn">
+    <span class=" <%= txn.activity.activity_type == 1 ? 'PositiveSign' : 'NegativeSign' %>">
+      <%= txn.activity.activity_type == 1 ? '+' : '-' %>
+    </span>
+    <span><%= txn.points %></span></div>
   <div class="deleteTxn"><%= link_to 'Delete', txn, :method => :delete %></div>
   <div class="clear"></div>
 </div>

@@ -39,7 +39,6 @@ div {
 a {
     text-decoration: none;
     color: white;
-    font-size: 75%;
 }
 
 a:hover {
@@ -55,9 +54,8 @@ a:hover {
 }
 
 .goImage {
-    width: 112px;
-    height: 112px;
-    margin-top: 40px;
+    width: 104px;
+    height: 104px;
 }
 
 .directionImage {
@@ -136,9 +134,14 @@ a:hover {
     margin-top: 5px;
 }
 .selections {
-    width: 55%;
+    width: 65%;
     float: left;
     text-align: right;
+}
+
+.actions {
+    width: 30%;
+    float: left;
 }
 
 .selection {
@@ -155,21 +158,21 @@ a:hover {
     color: #721700;
 }
 
-.actions {
-    width: 40%;
-    float: left;
-    margin-top: 150px;
+.upArrow {
+  padding-left: 20px;
 }
 
-.directionButtons {
-    width: 30%;
-    float: left;
+.goButton {
+  padding-left: 20px;
+  margin-top: 90px;
 }
 
-.finalAction {
-    width: 66%;
-    float: left;
+.downArrow {
+ padding-left: 20px;
+ margin-top: 80px;
 }
+
+
 
 /* TXN INDEX ---------------------------*/
 

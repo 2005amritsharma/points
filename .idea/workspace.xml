@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca6562c-1cf9-402d-8d6a-2449ba0c6939" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/amrits.JPG" afterPath="$PROJECT_DIR$/public/images/amrits.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/button-down.gif" afterPath="$PROJECT_DIR$/public/images/button-down.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/button-up.gif" afterPath="$PROJECT_DIR$/public/images/button-up.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/go.gif" afterPath="$PROJECT_DIR$/public/images/go.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/txns_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/txn.rb" afterPath="$PROJECT_DIR$/app/models/txn.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/_activity.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/_activity.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/_fields.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/new.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/_txn.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/_txn.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/index.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/new.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
     </list>
     <ignored path="points.iws" />
@@ -40,28 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="22" selection-start="3033" selection-end="3033" vertical-scroll-proportion="-0.022167487">
+            <state line="7" column="13" selection-start="172" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_txn.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/txns/_txn.html.erb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="205" selection-end="205" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_activity.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/activities/_activity.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="41" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.375">
+            <state line="154" column="31" selection-start="5035" selection-end="5035" vertical-scroll-proportion="0.53517586">
               <folding />
             </state>
           </provider>
@@ -90,22 +71,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20120106041018_drop_actions.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/scratchpad" />
         <option value="$PROJECT_DIR$/app/views/txns/create.js" />
         <option value="$PROJECT_DIR$/app/models/txn.rb" />
         <option value="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/activities/_activity.html.erb" />
         <option value="$PROJECT_DIR$/app/views/activities/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/txns/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/activities/_fields.html.erb" />
         <option value="$PROJECT_DIR$/app/views/activities/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/activities/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/txns/_txn.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/app/views/activities/_activity.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/txns/_txn.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
       </list>
     </option>
   </component>
@@ -198,6 +179,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="points" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="points" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -225,32 +220,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="points" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="points" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,11 +657,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scratchpad">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="1" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
@@ -756,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="0" selection-start="4479" selection-end="4479" vertical-scroll-proportion="0.35929647">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/txns/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="83" selection-end="109" vertical-scroll-proportion="0.012562814">
@@ -777,23 +734,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="25" selection-start="1587" selection-end="1587" vertical-scroll-proportion="0.66502464">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/_activity.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.375">
+        <state line="6" column="0" selection-start="112" selection-end="264" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/txns/_txn.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="205" selection-end="205" vertical-scroll-proportion="-2.5">
+        <state line="6" column="10" selection-start="272" selection-end="272" vertical-scroll-proportion="0.07537688">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="22" selection-start="3033" selection-end="3033" vertical-scroll-proportion="-0.022167487">
+        <state line="7" column="13" selection-start="172" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="31" selection-start="5035" selection-end="5035" vertical-scroll-proportion="0.53517586">
           <folding />
         </state>
       </provider>

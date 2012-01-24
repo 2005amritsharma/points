@@ -1,6 +1,10 @@
 <div class='activity'> 
   <div class='activityTitle'><%= activity.title %></div>
-  <div class='activityPoints'><%= activity.points%></div>
+  <div class='activityPoints'>
+    <span class=" <%= activity.activity_type == 1 ? 'PositiveSign': 'NegativeSign' %>">
+      <%= activity.activity_type == 1 ? '+': '-' %>
+    </span>
+    <span><%= activity.points%></span></div>
   <div class='activityEdit'><%= link_to 'Edit', edit_activity_path(activity) %></div>
   <div class='activityDelete'><%= link_to 'Delete', activity, :confirm => 'Are you sure?',:method => :delete %></div>
   <div class="clear"></div>

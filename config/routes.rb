@@ -51,8 +51,8 @@ Points::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => "activities#index"
-   match "/" => "activities#index" 
+   root :to => "txns#new"
+   match "/" => "txns#new"
 
   # See how all your routes lay out with "rake routes"
 
