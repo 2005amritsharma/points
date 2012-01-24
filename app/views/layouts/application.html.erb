@@ -7,21 +7,26 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body background="/images/gradient.png">
- <div class="container">
-      <header>
-
-        <nav class="round">
-          <ul>
-            <li><%= link_to "Configuration", activities_path  %></li>
-            <li><%= link_to "Actions", txns_path  %></li>
-          </ul>
-        </nav>
-     </header>
-     <br/> 
-       <section class="round">
-         <%= yield %>
-       </section>
- </div>
+<body>
+<div class="topBar">
+  <div class='logo'>
+     <span>my Points</span>
+   </div>
+   <div class="userData">
+     <span id="cumulativePoints"><%= @cumulative_points %></span>
+   </div>
+  <div class="navigation">
+    <span><a href="/txns/new">Today</a> </span>&nbsp;
+    <span><a href="/txns">History</a></span>&nbsp;
+    <span><a href="/activities">Configuration</a></span>
+  </div>
+   <div class="userImageSection"><img class='userImage' src="/images/amrits.JPG"/></div>
+   <div class="clear"></div>
+</div>
+<div class="container">
+  <section class="round">
+    <%= yield %>
+  </section>
+</div>
 </body>
 </html>

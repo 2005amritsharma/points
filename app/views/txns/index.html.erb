@@ -1,6 +1,15 @@
-<h1>Actions</h1>
-<% @txns.each do |txn| %>
-  <%= render txn %>
-<% end %>
-<br/>
-<%= link_to 'New Action', new_txn_path %>
+<input type='hidden' id='txnDate' value="<%= Date.today.strftime('%m/%d/%Y') %>"/>
+<div class="txnContainer">
+  <!-- DATE AND DAILY SCORE -->
+  <div>
+    <div class="selectedDate"><%= Date.today.strftime('%A, %B %-d, %Y') %></div>
+    <div class="dailyScore" id='dailyScore'><%= @total_score %></div>
+    <div class="clear"></div>
+  </div>
+  <div>
+    <% @txns.each do |txn| %>
+        <%= render txn %>
+    <% end %>
+  </div>
+  <div class="clear"></div>
+</div>

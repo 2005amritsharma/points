@@ -1,11 +1,15 @@
-<h1> Add Activity </h1>
+<div class="activityContainer">
+  <h1> Add Activity </h1>
 
-<%= form_for(@activity) do |f| %>
-  <%= render 'fields', :f => f %>
-  <div class="actions">
-    <%= f.submit "Add Activity" %>
-  </div>
-<% end %>
+  <%= form_for(@activity) do |f| %>
+      <%= render 'fields', :f => f %>
+      <div class="fieldRow">
+        <div class="label">&nbsp;</div>
+        <div class="inputBox"><%= f.submit "Add Activity" %></div>
+        <div class="clear"></div>
+      </div>
+  <% end %>
+</div>
 
 
 

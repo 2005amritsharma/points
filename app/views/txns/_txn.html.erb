@@ -1,12 +1,6 @@
-<div class='txn'> 
-  <span class='heading left'><%= txn.activity.title %></span><span class='right'><%= txn.points %></span>
-  <br/>
-  <br/>
-  <span class='description left'><%= txn.comments %></span>
-  <br/>
-  <span class='right'>
-    <%= link_to 'Edit', edit_txn_path(txn) %>
-    <%= link_to 'Delete', txn, :confirm => 'Are you sure?',:method => :delete %>
-  </span>
-  <br/>
+<div class="txn">
+  <div class="titleTxn"><%= txn.activity.title %></div>
+  <div class="pointsTxn"><%= txn.points %></div>
+  <div class="deleteTxn"><%= link_to 'Delete', txn, :method => :delete %></div>
+  <div class="clear"></div>
 </div>

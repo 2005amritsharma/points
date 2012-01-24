@@ -131,46 +131,32 @@
 </script>
 <input type='hidden' id='txnDate' value="<%= Date.today.strftime('%m/%d/%Y') %>"/>
 
-<div class='row1'>
-  <div class="row1left">myP<img class='logoImage' src="/images/logo.png"/>INTS</div>
-  <div class="row1middle" id="cumulativePoints"><%= @cumulative_points %></div>
-  <div class="row1right"><img class='userImage' src="/images/amrits.JPG"/></div>
-</div>
+<div class="txnContainer">
+  <!-- DATE AND DAILY SCORE -->
+  <div>
+    <div class="selectedDate"><%= Date.today.strftime('%A, %B %-d, %Y') %></div>
+    <div class="dailyScore" id='dailyScore'><%= @total_score %></div>
+    <div class="clear"></div>
+  </div>
 
-<div class='row2'>
-  <div class="row2left"><%= Date.today.strftime('%A, %B %-d, %Y') %>:</div>
-  <div class='row2right' id='dailyScore'><%= @total_score %></div>
-</div>
+  <!-- SELECTIONS AND ACTIONS -->
 
-<div class='row3'>
-    <div class='row3left'>
+  <div class="selectionsAndActions">
+    <!-- SELECTIONS -->
+    <div class="selections">
       <div id='itemPrev6' class="clickable selection"></div>
       <div id='itemPrev5' class="clickable selection"></div>
       <div id='itemPrev4' class="clickable selection"></div>
       <div id='itemPrev3' class="clickable selection"></div>
       <div id='itemPrev2' class="clickable selection"></div>
       <div id='itemPrev1' class="clickable selection"></div>
-    </div>
-    <div class='row3right'>
-      <img class="clickable" onclick="activitiesUp();" width="48" height="48" src='/images/button-up.gif'/>
-    </div>
-</div>
 
-<div class='row4'>
-  <div class="row4left">
-    <div id="itemSelected"></div>
-  </div>
-  <div class='row4middle'>
-  	 <span id="activityType" class="NegativeSign">-</span>
-     <span id='changePoints'>20</span>
-  </div>
-  <div class='row4right'>
-    <img align="left" class="clickable" src="/images/go.gif" onclick="activityAdd();" width="64" height="64"/>
-  </div>
-</div>
+      <div class="selectedItem">
+        <span id="itemSelected"></span>
+        <span id="activityType" class="NegativeSign">-</span>
+        <span id='changePoints'></span>
+      </div>
 
-<div class='row5'>
-    <div class='row5left'>
       <div id='itemNext1' class="clickable selection"></div>
       <div id='itemNext2' class="clickable selection"></div>
       <div id='itemNext3' class="clickable selection"></div>
@@ -178,7 +164,23 @@
       <div id='itemNext5' class="clickable selection"></div>
       <div id='itemNext6' class="clickable selection"></div>
     </div>
-    <div class='row5right'>
-      <img class="clickable" onclick="activitiesDown();" width="48" height="48" src='/images/button-down.gif'/>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <div class="directionButtons">
+        <div>
+          <img class="clickable directionImage" onclick="activitiesUp();" src='/images/button-up.gif'/>
+        </div>
+        <div>
+          <img class="clickable directionImage" onclick="activitiesDown();" src='/images/button-down.gif'/>
+        </div>
+      </div>
+      <div class="finalAction">
+        <img class="clickable goImage" src="/images/go.gif" onclick="activityAdd();"/>
+      </div>
+      <div class="clear"></div>
     </div>
+
+    <div class="clear"></div>
+  </div>
 </div>

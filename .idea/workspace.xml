@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca6562c-1cf9-402d-8d6a-2449ba0c6939" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/amrits.JPG" afterPath="$PROJECT_DIR$/public/images/amrits.JPG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/button-down.gif" afterPath="$PROJECT_DIR$/public/images/button-down.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/button-up.gif" afterPath="$PROJECT_DIR$/public/images/button-up.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/go.gif" afterPath="$PROJECT_DIR$/public/images/go.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/txns_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/txn.rb" afterPath="$PROJECT_DIR$/app/models/txn.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/_activity.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/_activity.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/_fields.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/_fields.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/new.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/_txn.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/_txn.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/index.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/txns/new.html.erb" afterPath="$PROJECT_DIR$/app/views/txns/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
     </list>
@@ -26,55 +40,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="53" selection-start="5898" selection-end="5898" vertical-scroll-proportion="-41.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="262" column="13" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.92610836">
+            <state line="205" column="22" selection-start="3033" selection-end="3033" vertical-scroll-proportion="-0.022167487">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="txns_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/txns_controller.rb">
+      <file leaf-file-name="_txn.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/txns/_txn.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="415" selection-end="433" vertical-scroll-proportion="0.0">
+            <state line="4" column="2" selection-start="205" selection-end="205" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="txn.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/txn.rb">
+      <file leaf-file-name="_activity.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/activities/_activity.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/txns/create.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="52" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.5">
+            <state line="7" column="41" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -105,13 +92,19 @@
       <list>
         <option value="$PROJECT_DIR$/db/migrate/20120106041018_drop_actions.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/app/views/activities/new.html.erb" />
         <option value="$PROJECT_DIR$/scratchpad" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/txns/create.js" />
         <option value="$PROJECT_DIR$/app/models/txn.rb" />
         <option value="$PROJECT_DIR$/app/controllers/txns_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/txns/create.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/_activity.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/txns/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/_fields.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/activities/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/txns/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/txns/_txn.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/custom.css" />
       </list>
     </option>
@@ -340,6 +333,11 @@
     <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/txns" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: points">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -690,21 +688,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120106041018_drop_actions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="82" selection-end="82" vertical-scroll-proportion="0.024630541" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120101193315_create_actions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="255" selection-end="275" vertical-scroll-proportion="0.16009852" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -726,49 +709,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="73" selection-end="73" vertical-scroll-proportion="0.036945812">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/txns_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="415" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="5" column="33" selection-start="95" selection-end="95" vertical-scroll-proportion="0.061576355">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/txn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+        <state line="2" column="29" selection-start="84" selection-end="84" vertical-scroll-proportion="0.024630541">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/txns_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="68" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
+        <state line="32" column="24" selection-start="836" selection-end="836" vertical-scroll-proportion="0.39408866">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="-7.5">
+        <state line="19" column="50" selection-start="632" selection-end="632" vertical-scroll-proportion="0.23869346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="376" selection-end="578" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="133" selection-end="316" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="31" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/txns/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="53" selection-start="5898" selection-end="5898" vertical-scroll-proportion="-41.0">
+        <state line="141" column="0" selection-start="4479" selection-end="4479" vertical-scroll-proportion="0.35929647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/txns/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="83" selection-end="109" vertical-scroll-proportion="0.012562814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="31" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/_activity.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="41" selection-start="378" selection-end="378" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/txns/_txn.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="205" selection-end="205" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="13" selection-start="3261" selection-end="3261" vertical-scroll-proportion="0.92610836">
+        <state line="205" column="22" selection-start="3033" selection-end="3033" vertical-scroll-proportion="-0.022167487">
           <folding />
         </state>
       </provider>

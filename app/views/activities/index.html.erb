@@ -1,6 +1,13 @@
-<h1>Activities</h1>
-<% @activities.each do |activity| %>
-  <%= render activity %>
-<% end %>
-<br/>
-<%= link_to 'New Activity', new_activity_path %>
+<div class="activityContainer">
+  <h1>Activities</h1>
+
+  <div>
+    <% @activities.each do |activity| %>
+        <%= render activity %>
+    <% end %>
+  </div>
+  <br/>
+  <div>
+    <%= link_to 'New Activity', new_activity_path %>
+  </div>
+</div>

@@ -1,7 +1,31 @@
+/* -----------------------------------------MISC----------------------------------------- */
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.NegativeSign {
+    color: #ff0066;
+}
+
+.PositiveSign {
+    color: #009933;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
 .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 70%;
+    float: left;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .left {
@@ -12,255 +36,248 @@
     float: right;
 }
 
-.description {
-    font-size: 18px;
-    font-style: italic;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.heading {
-    font-size: 24px;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.activity {
-    padding: 5px;
-    margin: 4px;
-}
-
-header {
-    padding-top: 10px;
-}
-
-header img {
-    padding: 1em;
-}
-
-section {
-    margin-top: 1em;
-    padding: 10px;
-    width: 100%;
-    float: left;
-}
-
-/* table */
-
-/* Links */
-
 a {
-    color: #09c;
     text-decoration: none;
+    color: white;
+    font-size: 75%;
 }
 
 a:hover {
-    color: #069;
     text-decoration: underline;
 }
 
-a:visited {
-    color: #069;
-}
-
-/* Navigation */
-
-nav {
-    float: right;
-}
-
-nav {
-    padding: 0 0.7em;
-    white-space: nowrap;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0.2em 0;
-}
-
-nav ul li a {
-    padding: 0 5px;
-    font-weight: bold;
-}
-
-nav ul li a:visited {
-    color: #09c;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Round corners */
-
-.round {
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
-
-
-
-/* -----------------------------------------LATEST STYLE----------------------------------------- */
-
-div {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    padding: 5px;
-}
-
-.NegativeSign {
-    color: #F30;
-}
-
-.PositiveSign {
-    color: #6C3;
-}
-
-.clickable {
-    cursor: pointer;
-}
-
-.logoImage {
-    margin-left: -2px;
-    margin-right: -2px;
-    width: 24px;
-    height: 24px;
-}
-
+/*-----------------------------------------IMAGES ----------------------------------------- */
 
 .userImage {
-    margin: 10px;
     float: right;
-    width: 96px;
+    width: 64px;
     height: 64px;
 }
 
-/* row1 */
-.row1 {
+.goImage {
+    width: 112px;
+    height: 112px;
+    margin-top: 40px;
+}
+
+.directionImage {
+    width: 96px;
+    height: 96px;
+}
+
+/*-------------------------------- TOP BAR ----------------------------------- */
+
+.topBar {
+    padding-left: 5px;
+    background-color: #721700;
+    height: 64px;
     width: 100%;
-    clear:both;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.row1left {
-    width: 20%;
+
+.logo {
+    width: 45%;
     float: left;
-    color: white;
-    font-size: 200%;
     text-align: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 150%;
 }
 
-.row1middle {
-    width: 55%;
+.userData {
+    width: 10%;
     float: left;
-    color: white;
+    text-align: left;
+    padding: 2px;
     font-size: 300%;
-    text-align: center;
 }
 
-.row1right {
-    width: 20%;
+.userImageSection {
+    width: 10%;
     float: right;
 }
 
-/* row2 */
-
-.row2 {
-    width: 100%;
-    clear:both;
-}
-
-.row2left {
-    width: 44%;
-    float: left;
-    text-align: right;
-    color: white;
-    font-size: 100%;
-    padding-right: 5px;
-}
-
-.row2right {
-    width: 51%;
-    float: left;
-    text-align: left;
-    color: #6C3;
-    font-size: 100%;
-    padding-left: 5px;
-}
-
-/* row3 */
-
-.row3 {
-    width: 100%;
-    clear:both;
-}
-
-.row3left {
-    width: 40%;
-    float: left;
-    text-align: right;
-    color: white;
-    font-size: 100%;
-    padding-right: 5px;
-}
-
-.row3right {
-    width: 55%;
-    float: left;
-    padding-left: 5px;
-}
-
-/* row4 -----special row for selected value-----*/
-
-.row4 {
-    width: 100%;
-    clear:both;
-}
-
-.row4left {
-    width: 40%;
-    float: left;
-    text-align: right;
-    color: white;
-    font-size: 100%;
-    padding-right: 5px;
-}
-
-.row4middle {
+.navigation {
     width: 30%;
     float: left;
-    text-align: left;
-    color: white;
-    font-size: 100%;
-    padding-left: 5px;
+    text-align: right;
 }
 
-.row4right {
-    width: 25%;
+/*-------------------------------- DATE AND DAILY SCORE ----------------------------------- */
+
+.selectedDate {
+    width: 43%;
     float: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-size: 125%;
+    text-align: left;
+    color: #424245;
 }
 
-/* row5 */
-.row5 {
-    width: 100%;
-    clear:both;
+.dailyScore {
+    width: 52%;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-size: 175%;
+    text-align: left;
+    color: #009933;
 }
 
-.row5left {
-    width: 40%;
+/*-------------------------------- SELECTIONS AND ACTIONS --------------------------------- */
+
+.selectionsAndActions {
+    margin-top: 5px;
+}
+.selections {
+    width: 55%;
     float: left;
     text-align: right;
-    color: white;
+}
+
+.selection {
+    padding: 5px;
+    padding-right: 100px;
+    color: #6F6F70;
+    font-size: 125%;
+}
+
+.selectedItem {
+    padding: 10px;
+    border: 1px solid;
+    font-size: 150%;
+    color: #721700;
+}
+
+.actions {
+    width: 40%;
+    float: left;
+    margin-top: 150px;
+}
+
+.directionButtons {
+    width: 30%;
+    float: left;
+}
+
+.finalAction {
+    width: 66%;
+    float: left;
+}
+
+/* TXN INDEX ---------------------------*/
+
+.txnContainer {
+    width: 70%;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #424245;
+}
+
+div.txn {
+    padding: 3px;
+    margin: 20px;
+}
+
+div.titleTxn {
+    width: 60%;
+    float: left;
+    text-align: left;
+}
+
+div.pointsTxn {
+    width: 10%;
+    float: left;
+    text-align: left;
+}
+
+div.deleteTxn {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+div.deleteTxn a {
+    text-decoration: none;
+    color: #721700;
     font-size: 100%;
+}
+
+/* Activities ---------------------------*/
+
+.activityContainer {
+    width: 70%;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #424245;
+}
+
+.activity {
+    padding: 3px;
+    margin: 10px;
+}
+
+div.activityContainer a {
+    text-decoration: none;
+    color: #721700;
+    font-size: 100%;
+}
+
+.activityTitle {
+    width: 60%;
+    float: left;
+    text-align: left;
+}
+
+.activityPoints {
+    width: 10%;
+    float: left;
+    text-align: left;
+}
+
+.activityEdit {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+.activityDelete {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+/* forms ---------------------------*/
+
+.label {
+    width: 20%;
+    float: left;
+    text-align: right;
     padding-right: 5px;
 }
 
-.row5right {
-    width: 55%;
+.inputBox {
+    width: 70%;
     float: left;
-    padding-left: 5px;
+}
+
+.fieldRow {
+   margin: 10px;
+}
+
+.submitButton {
+   padding-left: 40%;
+
 }

@@ -1,14 +1,21 @@
 class TxnsController < ApplicationController
 
   def index
-    @txns = Txn.all
+    @cumulative_points = Txn.cumulative_points
+    if params[:txnDate]
+      txn_date = DateTime.strptime(params[:txn][:txn_date], '%m/%d/%Y')
+      @txns = Txn.history txn_date
+      @total_score = Txn.total_points txn_date
+    else
+      @txns = Txn.history Date.today
+      @total_score = Txn.total_points Date.today
+    end
   end
 
   def new
-    @activities = Activity.all
-
-    @total_score = Txn.total_points Date.today
     @cumulative_points = Txn.cumulative_points
+    @total_score = Txn.total_points Date.today
+    @activities = Activity.all
   end
 
   def create
@@ -20,19 +27,6 @@ class TxnsController < ApplicationController
     @cumulative_points = Txn.cumulative_points
     respond_to do |format|
       format.js
-    end
-  end
-
-  def edit
-    @txn = Txn.find(params[:id])
-  end
-
-  def update
-    @txn = Txn.find(params[:id])
-    if @txn.update_attributes(params[:txn])
-      redirect_to txns_path
-    else
-      render 'edit'
     end
   end
 

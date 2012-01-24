@@ -1,17 +1,16 @@
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title, :size => 55 %>
+  <div class="fieldRow">
+    <div class="label"><%= f.label :title %></div>
+    <div class="inputBox"><%= f.text_field :title, :size => 55 %></div>
+    <div class="clear"></div>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 10, :columns=> 10 %>
+  <div class="fieldRow">
+    <div class="label"><%= f.label :points %></div>
+    <div class="inputBox"><%= f.text_field :points, :size => 10 %></div>
+    <div class="clear"></div>
   </div>
-  <div class="field">
-    <%= f.label :points %><br />
-    <%= f.text_field :points, :size => 10 %>
-  </div>
-  <div class="field">
-    <%= f.label :activity_type %><br />
-    <%= f.text_field :activity_type %>
+  <div class="fieldRow">
+    <div class="label"><%= f.label :activity_type %></div>
+    <div class="inputBox"><%= f.text_field :activity_type, :size => 5 %></div>
+    <div class="clear"></div>
   </div>
 
